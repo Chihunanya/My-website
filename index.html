@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naya | Professional Portfolio</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/a2e0e6ad3f.js" crossorigin="anonymous"></script>
+
+<style>
+:root{
+  --bg:#1a1410;
+  --card:#241c17;
+  --brown:#b89b85;
+  --light:#f3ebe5;
+  --muted:#c9b9ad;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--light);
+  line-height:1.8;
+  padding-top:80px;
+}
+
+section{padding:90px 8%}
+h1,h2,h3{font-family:'Playfair Display',serif}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;left:0;width:100%;
+  background:rgba(26,20,16,.95);
+  backdrop-filter:blur(6px);
+  z-index:1000;
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 8%;
+}
+.logo{
+  font-size:1.3rem;
+  font-family:'Playfair Display',serif;
+}
+.nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+.nav ul li a{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:.9rem;
+}
+.nav ul li a:hover{color:var(--brown)}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("hero.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+}
+.hero-content{max-width:650px}
+.hero h1{font-size:3.4rem}
+.hero p{color:var(--muted);margin:15px 0 30px}
+
+/* BUTTONS */
+.btn{
+  padding:12px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  margin-right:10px;
+}
+.btn-primary{background:var(--brown);color:#1a1410}
+.btn-outline{border:1px solid var(--brown);color:var(--brown)}
+
+/* LAYOUT */
+.card{
+  background:var(--card);
+  border-radius:20px;
+  padding:40px;
+}
+.grid{display:grid;gap:30px}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+
+/* SOCIALS */
+.socials{
+  text-align:center;
+}
+.socials a{
+  font-size:2rem;
+  margin:0 15px;
+  color:var(--brown);
+}
+.socials a:hover{color:var(--light)}
+
+/* FORM */
+input,textarea{
+  width:100%;
+  padding:12px;
+  background:#2f261f;
+  border:none;
+  border-radius:10px;
+  color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .hero h1{font-size:2.4rem}
+  .nav ul{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav class="nav">
+    <div class="logo">Naya</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#startups">Startups</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Onyiriuka Chihunanya</h1>
+    <p>
+      Student • Content Creator • Tech-Driven Creative
+Passionate about digital storytelling, innovation, and growth.
+    </p>
+    <a href="cv.pdf" class="btn btn-primary" download>Download CV</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
+</section>
+
+<!-- GETTING TO KNOW ME -->
+<section class="card">
+  <h2>Getting to Know Me</h2>
+  <p><strong>Name:</strong> Onyiriuka Chihunanya</p>
+  <p><strong>Education:</strong> Student of University of Nigeria Nsukka</p>
+  <p><strong>Focus:</strong> Project coordination, digital operations, media</p>
+  <p><strong>Industries:</strong> Tech, sustainability, education</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="grid grid-2">
+  <img src="corporate.jpg" style="width:100%;border-radius:15px">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I am a highly organized and motivated student with hands-on experience
+      supporting projects, managing digital platforms, and coordinating people
+      and processes.
+    </p>
+    <p>
+      I thrive in structured environments and enjoy contributing to meaningful
+      initiatives in tech, sustainability, and media.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Core Skills</h2>
+  <div class="grid grid-3">
+    <div class="card">Project Coordination & Task Management</div>
+    <div class="card">Social Media Strategy & Content Planning</div>
+    <div class="card">Personal / Executive Assistance</div>
+    <div class="card">Event Planning & Volunteer Coordination</div>
+    <div class="card">Community & Team Management</div>
+    <div class="card">Digital Communication & Documentation</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Project & Operations Support</h3>
+      <ul>
+        <li>Coordinated tasks, timelines, and deliverables</li>
+        <li>Supported team communication and documentation</li>
+        <li>Ensured smooth project execution</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Personal Assistant</h3>
+      <ul>
+        <li>Managed schedules and communications</li>
+        <li>Provided administrative and digital support</li>
+        <li>Improved workflow efficiency</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Social Media Manager</h3>
+      <ul>
+        <li>Managed Instagram & YouTube accounts</li>
+        <li>Created content strategies</li>
+        <li>Increased engagement and visibility</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Volunteer & Event Organizer</h3>
+      <ul>
+        <li>Volunteered at multiple tech events</li>
+        <li>Handled logistics and coordination</li>
+        <li>Worked with diverse teams</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STARTUPS -->
+<section id="startups">
+  <h2>Startups & Initiatives</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>WasteCoin</h3>
+      <p>
+        A sustainability-focused initiative promoting responsible waste
+        management and environmental awareness.
+      </p>
+    </div>
+    <div class="card">
+      <h3>LINGUA</h3>
+      <p>
+        A language-focused platform aimed at improving communication and
+        learning accessibility.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section>
+  <h2>Featured Content</h2>
+  <div class="card">
+    <iframe width="100%" height="400"
+      src="https://www.youtube.com/embed/LieYYtZi1tw?si=Bbayw9BUxcAyh8Na"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section>
+  <div class="card">
+    <h2 style="text-align:center">Connect With Me</h2>
+    <div class="socials">
+      <a href="https://www.youtube.com/@NayaonYT"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/sympul_naya/"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/sympul_naya"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/onyiriuka-chihunanya/"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card">
+    <form action="https://formspree.io/f/mojqvbza" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea><br><br>
+      <button class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<footer style="text-align:center;padding:40px;color:var(--muted)">
+© 2025 Naya • Professional Portfolio
+</footer>
+
+</body>
+</html>
